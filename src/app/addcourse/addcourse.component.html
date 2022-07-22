@@ -1,0 +1,35 @@
+
+<h1 align="center">ADD COURSE</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <form #addcourse="ngForm" (ngSubmit)="Addcourse()" >
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">course title</label>
+                    <input type="text" class="form-control" [(ngModel)]=course.coursetitle name="title">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Duration</label>
+                    <input type="text" class="form-control" [(ngModel)]="course.courseDuration" name="Duration">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Descrition</label>
+                    <input type="text" class="form-control" [(ngModel)]="course.courseDescription" name="Description">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">venue</label>
+                    <input type="text" class="form-control" [(ngModel)]="course.coursevenue" name="venue">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">date</label>
+                    <input type="date" name="" id="" class="form-control" [(ngModel)]="course.coursevenue" name="date">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button class="btn btn-danger">Register</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
